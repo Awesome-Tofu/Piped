@@ -137,7 +137,7 @@ export default {
         downloadPlaylistAsTxt() {
             var data = "";
             this.playlist.relatedStreams.forEach(element => {
-                data += "https://piped.kavin.rocks" + element.url + "\n";
+                data += "https://tofu-tube.vercel.app" + element.url + "\n";
             });
             this.download(data, this.playlist.name + ".txt", "text/plain");
         },
